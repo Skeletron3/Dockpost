@@ -3,6 +3,7 @@
 
 #include "../common.hh"
 
+#define Dockpost_token_type_data_uninitialised -2
 #define Dockpost_token_type_Uknown -1
 #define Dockpost_token_type_EOF 0
 
