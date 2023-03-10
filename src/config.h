@@ -1,15 +1,16 @@
 #ifndef Dockpost_config_header_
 #define Dockpost_config_header_
 
-
-#if defined(WIN32) || defined(_WIN32) || defined(__WIN32__) || defined(__NT__)
-	#define Dockpost_OperatingSystem "Windows"
-#elif __linux__
-	#define Dockpost_OperatingSystem "Linux"
-#elif __unix__
-	#define Dockpost_OperatingSystem "Unix"
-#elif defined(_POSIX_VERSION)
-	#define Dockpost_OperatingSystem "Posix"
+#ifndef Dockpost_OperatingSystem // If operating system is not defined automatically detect it
+	#if defined(WIN32) || defined(_WIN32) || defined(__WIN32__) || defined(__NT__)
+		#define Dockpost_OperatingSystem "Windows"
+	#elif __linux__
+		#define Dockpost_OperatingSystem "Linux"
+	#elif __unix__
+		#define Dockpost_OperatingSystem "Unix"
+	#elif defined(_POSIX_VERSION)
+		#define Dockpost_OperatingSystem "Posix"
+	#endif
 #endif
 
 #if defined(__clang__)
