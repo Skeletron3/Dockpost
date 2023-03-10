@@ -10,8 +10,49 @@ int main() {
 	Dockpost::Token token;
 	
 	lexer.Keywords = {
-		"printf",
-		"while"
+		"int",
+		"long",
+		"short",
+		"double",
+		"float",
+
+		"char",
+		"string",
+
+		"bool",
+
+		"signed",
+		"unsigned",
+		"inline",
+		"const",
+		"delete",
+		"new",
+
+		"if",
+		"while",
+		"do",
+		"for",
+		"ret",
+		"break",
+		"continue",
+
+		"switch",
+		"case",
+
+		"true",
+		"false",
+
+		"try",
+		"except",
+		"throw",
+		"catch",
+
+		"class",
+
+		"and",
+		"or",
+		"xor",
+		"not",
 	};
 	
 	lexer.SourceCode = "int main(string[] argv)";
