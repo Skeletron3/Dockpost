@@ -20,5 +20,7 @@ add_library(
 )
 
 add_executable(dockpost src/Main/Main.cc)
+
 target_link_libraries(libLexer libToken)
+
 target_link_libraries(dockpost libToken libLexer)
