@@ -10,7 +10,9 @@ namespace Dockpost {
 		public:
 		string SourceCode = "";
 		int PositionInSourceCode = 0;
+		int LexedCounter = 0;
 		std::vector<string> Keywords;
+		std::vector<Token> Tokens;
 		Token token;
 		
 		Token Lex();

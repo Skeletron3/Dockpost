@@ -2,6 +2,7 @@
 
 Dockpost::Token Dockpost::Lexer::Lex() {
 	token.Erase();
+	LexedCounter++;
 	switch(SourceCode[PositionInSourceCode]) {
 		default:
 			token.TokenSource = SourceCode[PositionInSourceCode];
